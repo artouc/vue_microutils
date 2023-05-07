@@ -22,5 +22,15 @@ const { toolTipDisplayFlg, toolTipXPos, toolTipYPos, toolTipText } = useToolTip(
     padding: 8px
     border-radius: 5px
     z-index: 999
+    
+[data-tooltipalt]
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
 ```
 
